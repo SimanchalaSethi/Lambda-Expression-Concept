@@ -1,0 +1,49 @@
+Requirement:
+ 1. Function interface
+ 2. Method Overloading
+
+ Content to Cover
+ ----------------
+ 1. What is Lambda?
+ 2. Benefits of Lambda.
+ 3. How to write Lambda
+ 4. Important Rules of Lambda.
+ 5. Functional Interface.
+ 6. How lambda is used to implements functional interface.
+ 7. Lambda Examples, Creating thread using Lambda Expression.
+ 8. Lambda in Desktop App.
+
+ 1. What is Lambda Expression ?
+ -> it introduces java 1.8 and also stream API introduced.
+ -> It is a anonymous function having no name, no modifier, no return type.
+ -> It can only use in functional interface.
+
+2. Benefits Of Lambda.
+-> Reduces the lines of Code.
+-> Sequential and Parallel execution support by passing behaviour as an argument in methods.
+-> To call APIs very effectively.
+-> To write more Readable, Maintainable and Concise code.
+
+3. How to write Lambda
+-> before Lambda
+  public void printHello(){
+   System.out.println("Hello");
+  }
+ -> after Lambda
+  ()->{
+    System.out.println("Hello");
+  }
+
+4. Important Rules of Lambda
+ -> If the body of Lambda Expression contain only one statement then curly braces are optional.
+ -> Java compiler also inter the type of variable passed in arguments, hence type is optional.
+    (int a, int b) -> return a+b;
+    same as
+    (a,b)-> return a+b;
+
+5. Functional Interface
+-> If the interface contains only one abstract method then it is Functional Interface.
+EX: Runnable, Callable, Comparable etc.
+-> To call lambda we require functional Interface.
+-> Lambda is used to implement functional interface in very simple and short manner.
+
